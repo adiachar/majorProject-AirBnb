@@ -1,0 +1,41 @@
+<% layout("/layouts/boilerplate.ejs") %>
+    
+    <div class="row mt-5">
+        <div class="col-8 offset-2" >
+            <h2>Edit Your List</h2>
+            <form action="/listings/<%= list._id%>?_method=PATCH" method="post" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="listing[title]" value="<%= list.title %>" class="form-control" id="title" required/>
+                    <div class="invalid-feedback">Please Add a Title</div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" id="description" class="form-control" required> <%= list.description %> </textarea>
+                    <div class="invalid-feedback">Please Add a Description</div>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image URL</label>
+                    <input type="text" name="listing[image]" value="<%= list.image %>" class="form-control" id="image"/>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="text" name="listing[price]" value="<%= list.price %>" class="form-control" id="price" required/>
+                        <div class="invalid-feedback">Please Add a Valid Price</div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="listing[country]" value="<%= list.country %>" class="form-control" id="country" required/>
+                        <div class="invalid-feedback">Country is Required</div>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="listing[location]" value="<%= list.location %>" class="form-control" id="location" required/>
+                    <div class="invalid-feedback">Location is Required</div>
+                </div>
+                <button class="btn btn-dark add-btn">Edit</button>
+            </form>
+        </div>
+    </div>

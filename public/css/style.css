@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    min-height: 100vh;
+    flex: 1;
+}
+
+/* nav bar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+
+/* footer */
+footer{
+    height: 8rem;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-details{
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-details a{
+    margin: 0px 10px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.f-info-details i{
+    margin: 0px 10px;
+}
+
+.f-info-socials{
+    margin-left: 3rem;
+    font-size: 1.4rem;
+    color: #222222;
+    display: flex;
+}
+.f-info-socials i{
+    margin: 0px;
+}
+
+.f-info-links{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.wandurlust{
+    margin: 0px;
+}
+
+/*card for index.ejs*/
+
+.card{
+    border: none !important;
+}
+
+.card-img-overlay:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.add-btn{
+    width: 6rem;
+    background-color: #fe424d !important;
+    border: none !important; 
+}
+
+/* card for show.ejs */
+
+.show-img{
+    height: 40vh;
+    width: 40rem !important;
+    border-radius: 1rem !important;
+}
+
+.btns{
+    display: flex;
+}
+
+.btns form{
+    margin: 10px;
+}
+
+.btn-delete{
+    width: 6rem;
+}
